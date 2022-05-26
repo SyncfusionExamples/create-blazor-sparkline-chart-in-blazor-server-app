@@ -47,11 +47,13 @@ Denote the data usage in Blazor sparkline charts by highlighting and customizing
 
 [Documentation](https://blazor.syncfusion.com/documentation/sparkline/getting-started?utm_source=github&utm_medium=listing&utm_campaign=blazor-sparkline-chart-github-samples)
 
-[Online example](https://blazor.syncfusion.com/demos/sparkline/default-functionalities?utm_source=github&utm_medium=listing&utm_campaign=blazor-sparkline-chart-github-samples)
+[View Demos](https://github.com/SyncfusionExamples/create-blazor-sparkline-chart-in-blazor-server-app?utm_source=github&utm_medium=listing&utm_campaign=blazor-sparkline-chart-github-samples)
 
 [Community Forums](https://www.syncfusion.com/forums/blazor-components?utm_source=github&utm_medium=listing&utm_campaign=blazor-sparkline-chart-github-samples)
 
 [Suggest a feature or report a bug](https://www.syncfusion.com/feedback/blazor-components?utm_source=github&utm_medium=listing&utm_campaign=blazor-sparkline-chart-github-samples)
+
+[Online example](https://blazor.syncfusion.com/demos/sparkline/default-functionalities?utm_source=github&utm_medium=listing&utm_campaign=blazor-sparkline-chart-github-samples)
 
 [Video Tutorials](https://www.syncfusion.com/tutorial-videos/blazor/sparkline?utm_source=github&utm_medium=listing&utm_campaign=blazor-sparkline-chart-github-samples)
 
