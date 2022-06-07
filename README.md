@@ -1,6 +1,6 @@
 # Add the Syncfusion Blazor Sparkline Chart to a Blazor Server App 
 
-The [Blazor Sparkline Chart](https://www.syncfusion.com/blazor-components/blazor-sparkline?utm_source=github&utm_medium=listing&utm_campaign=blazor-Sparkline-chart-github-samples) is a replacement for normal charts to display trends in a very small area. Learn how easily you can create and configure Syncfusion Blazor Sparkline Chart in a Blazor Server App using Visual Studio 2019. Blazor Sparkline Charts are a small kind of chart that�s drawn without any axis or coordinates to visualize data in a very compact space. In this video, you will learn how to add a simple Blazor sparkline chart to a Blazor server app. You will see how to populate list data, change sparkline chart types, and enable data labels and tooltips. Finally, you will learn how to integrate the sparkline charts in a grid component.
+The [Blazor Sparkline Chart](https://www.syncfusion.com/blazor-components/blazor-sparkline?utm_source=github&utm_medium=listing&utm_campaign=blazor-Sparkline-chart-github-samples) is a replacement for normal charts to display trends in a very small area. Learn how easily you can create and configure Syncfusion Blazor Sparkline Chart in a Blazor Server App using Visual Studio 2019. Blazor Sparkline Charts are a small kind of chart that’s drawn without any axis or coordinates to visualize data in a very compact space. In this video, you will learn how to add a simple Blazor sparkline chart to a Blazor server app. You will see how to populate list data, change sparkline chart types, and enable data labels and tooltips. Finally, you will learn how to integrate the sparkline charts in a grid component.
  
 ## Project pre-requisites
 Make sure that you have the compatible versions of Visual Studio 2019 and .NET Core SDK latest version(3.1.2) in your machine before starting to work on this project.
@@ -12,7 +12,7 @@ To run this application, you need to first clone the create-blazor-sparkline-cha
 
 ## Sparkline types
 
-Blazor Sparkline Charts support five types of sparklines ([line](https://blazor.syncfusion.com/documentation/sparkline/chart-types#line?utm_source=github&utm_medium=listing&utm_campaign=blazor-sparkline-chart-github-samples), [column](https://blazor.syncfusion.com/documentation/sparkline/chart-types#column?utm_source=github&utm_medium=listing&utm_campaign=blazor-sparkline-chart-github-samples), [area](https://blazor.syncfusion.com/documentation/sparkline/chart-types#area?utm_source=github&utm_medium=listing&utm_campaign=blazor-sparkline-chart-github-samples), [win-loss](https://blazor.syncfusion.com/documentation/sparkline/chart-types#winloss?utm_source=github&utm_medium=listing&utm_campaign=blazor-sparkline-chart-github-samples), and [pie](https://blazor.syncfusion.com/documentation/sparkline/chart-types#pie?utm_source=github&utm_medium=listing&utm_campaign=blazor-sparkline-chart-github-samples) to show data trends.
+Blazor Sparkline Charts support five types of sparklines ([line](https://blazor.syncfusion.com/documentation/sparkline/chart-types?utm_source=github&utm_medium=listing&utm_campaign=blazor-sparkline-chart-github-samples#line), [column](https://blazor.syncfusion.com/documentation/sparkline/chart-types?utm_source=github&utm_medium=listing&utm_campaign=blazor-sparkline-chart-github-samples#column), [area](https://blazor.syncfusion.com/documentation/sparkline/chart-types?utm_source=github&utm_medium=listing&utm_campaign=blazor-sparkline-chart-github-samples#area), [win-loss](https://blazor.syncfusion.com/documentation/sparkline/chart-types?utm_source=github&utm_medium=listing&utm_campaign=blazor-sparkline-chart-github-samples#winloss), and [pie](https://blazor.syncfusion.com/documentation/sparkline/chart-types?utm_source=github&utm_medium=listing&utm_campaign=blazor-sparkline-chart-github-samples#pie) to show data trends.
 
 ## Axis customization
 
@@ -24,7 +24,7 @@ Improve readability by using [data labels](https://blazor.syncfusion.com/documen
 
 ## Tooltip
 
-The interactive Blazor Sparkline Charts provide options to display details about data point values through a [tooltip](https://blazor.syncfusion.com/documentation/sparkline/user-interaction#tooltip?utm_source=github&utm_medium=listing&utm_campaign=blazor-sparkline-chart-github-samples) when hovering the mouse over a data point.
+The interactive Blazor Sparkline Charts provide options to display details about data point values through a [tooltip](https://blazor.syncfusion.com/documentation/sparkline/user-interaction?utm_source=github&utm_medium=listing&utm_campaign=blazor-sparkline-chart-github-samples#tooltip) when hovering the mouse over a data point.
 
 ## Range band
 
