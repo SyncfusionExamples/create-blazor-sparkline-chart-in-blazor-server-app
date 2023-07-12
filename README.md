@@ -43,7 +43,7 @@ Denote the data usage in Blazor sparkline charts by highlighting and customizing
 
 [Download Free Trial](https://www.syncfusion.com/downloads/blazor?utm_source=github&utm_medium=listing&utm_campaign=blazor-sparkline-chart-github-samples)
 
-[Pricing](https://www.syncfusion.com/sales/products/blazor?utm_source=github&utm_medium=listing&utm_campaign=blazor-sparkline-chart-github-samples)
+[Pricing](https://www.syncfusion.com/sales/teamlicense?utm_source=github&utm_medium=listing&utm_campaign=blazor-sparkline-chart-github-samples)
 
 [Documentation](https://blazor.syncfusion.com/documentation/sparkline/getting-started?utm_source=github&utm_medium=listing&utm_campaign=blazor-sparkline-chart-github-samples)
 
