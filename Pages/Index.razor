@@ -1,16 +1,20 @@
 ﻿@page "/"
 
-    <SfSparkline TValue="WeatherData" DataSource="@TemperatureData" XName="Month"
-                 YName="Value" ValueType="SparklineValueType.Category" Height="80px"
-                 Width="150px" Type="SparklineType.Line">
-        <SparklineTooltipSettings Visible="true"></SparklineTooltipSettings>
-        <SparklineDataLabelSettings Visible="new List<VisibleType> { VisibleType.Start, VisibleType.End }">
-        </SparklineDataLabelSettings>
-        <SparklineMarkerSettings Visible="new List<VisibleType> { VisibleType.All}">
-        </SparklineMarkerSettings>
-        <SparklinePadding Left="10" Right="10"></SparklinePadding>
-    </SfSparkline>
-<br />
+<SfSparkline DataSource="ClimateData"
+             TValue="WeatherReport"
+             XName="Month"
+             YName="Celsius"
+             ValueType="SparklineValueType.Category"
+             Height="80px"
+             Width="150px">
+    <SparklineDataLabelSettings Visible="new List<VisibleType> { VisibleType.Start, VisibleType.End }"></SparklineDataLabelSettings>
+    <SparklinePadding Left="10" Right="10"></SparklinePadding>
+    <SparklineMarkerSettings Visible="new List<VisibleType>{VisibleType.All}"></SparklineMarkerSettings>
+    <SparklineTooltipSettings TValue="WeatherReport" Visible="true"></SparklineTooltipSettings>
+</SfSparkline>
+
+<br/>
+
 <SfGrid DataSource="@Orders" TValue="OrdersData">
     <GridColumns>
         <GridColumn Field=@nameof(OrdersData.Id) HeaderText="Order ID" TextAlign="TextAlign.Left" Width="50"></GridColumn>
@@ -20,10 +24,11 @@
         <GridColumn HeaderText="Tax per annum" TextAlign="TextAlign.Left" Width="100">
             <Template>
                 @{
+                    var data1 = ChartData.ElementAt(new Random().Next(0, ChartData.Count - 1)).Cast<object>();
                     <div style="width:100px">
-                        <SfSparkline DataSource="@ChartData[ChartDataIndex]" ValueType="SparklineValueType.Numeric"
-                                     LineWidth="2" Type="SparklineType.Line"
-                                     Fill="#3C78EF" Width="90%" Height="50px">
+                        <SfSparkline DataSource="@data1" ValueType="SparklineValueType.Numeric"
+                                 LineWidth="2" Type="SparklineType.Line"
+                                 Fill="#3C78EF" Width="90%" Height="50px">
                         </SfSparkline>
                     </div>
                     ChartDataIndex++;
@@ -34,39 +39,40 @@
 </SfGrid>
 
 @code {
-    public class WeatherData
+    public class WeatherReport
     {
-        public string Month;
-        public int Value;
+        public string Month { get; set; }
+        public double Celsius { get; set; }
     };
-    public List<WeatherData> TemperatureData= new List<WeatherData> {
-        new  WeatherData { Month= "January", Value= 34 },
-        new  WeatherData { Month= "February", Value= 36 },
-        new  WeatherData { Month= "March", Value= 32 },
-        new  WeatherData { Month= "April", Value= 35 },
-        new  WeatherData { Month= "May", Value= 40 },
-        new  WeatherData { Month= "June", Value= 38 },
-        new  WeatherData { Month= "July", Value= 33 },
-        new  WeatherData { Month= "August", Value= 37 },
-        new  WeatherData { Month= "September", Value= 34 },
-        new  WeatherData { Month= "October", Value= 31 },
-        new  WeatherData { Month= "November", Value= 30 },
-        new  WeatherData { Month= "December", Value= 29}
+    public List<WeatherReport> ClimateData = new List<WeatherReport> {
+        new  WeatherReport { Month= "Jan", Celsius= 34 },
+        new  WeatherReport { Month= "Feb", Celsius= 36 },
+        new  WeatherReport { Month= "Mar", Celsius= 32 },
+        new  WeatherReport { Month= "Apr", Celsius= 35 },
+        new  WeatherReport { Month= "May", Celsius= 40 },
+        new  WeatherReport { Month= "Jun", Celsius= 38 },
+        new  WeatherReport { Month= "Jul", Celsius= 33 },
+        new  WeatherReport { Month= "Aug", Celsius= 37 },
+        new  WeatherReport { Month= "Sep", Celsius= 34 },
+        new  WeatherReport { Month= "Oct", Celsius= 31 },
+        new  WeatherReport { Month= "Nov", Celsius= 30 },
+        new  WeatherReport { Month= "Dec", Celsius= 29}
     };
+
     public int ChartDataIndex = 0;
     public List<int[]> ChartData = new List<int[]>
-		{
-			new int[]{0, 6, 4, 1, 3, 2, 5 },
-			new int[]{5, 4, 6, 3, 1, 2, 0 },
-			new int[]{6, 4, 0, 3, 2, 5, 1 },
-			new int[]{4, 6, 3, 0, 1, 2, 5 },
-			new int[]{3, 5, 6, 4, 0, 1, 2 },
-			new int[]{1, 3, 4, 2, 5, 0, 6 },
-			new int[]{2, 4, 0, 3, 5, 6, 1 },
-			new int[]{5, 4, 6, 3, 1, 2, 0 },
-			new int[]{0, 6, 4, 1, 3, 2, 5 },
-			new int[]{6, 4, 0, 3, 2, 5, 1 }
-		};
+        {
+            new int[]{0, 6, 4, 1, 3, 2, 5 },
+            new int[]{5, 4, 6, 3, 1, 2, 0 },
+            new int[]{6, 4, 0, 3, 2, 5, 1 },
+            new int[]{4, 6, 3, 0, 1, 2, 5 },
+            new int[]{3, 5, 6, 4, 0, 1, 2 },
+            new int[]{1, 3, 4, 2, 5, 0, 6 },
+            new int[]{2, 4, 0, 3, 5, 6, 1 },
+            new int[]{5, 4, 6, 3, 1, 2, 0 },
+            new int[]{0, 6, 4, 1, 3, 2, 5 },
+            new int[]{6, 4, 0, 3, 2, 5, 1 }
+        };
     public class OrdersData
     {
         public string Id { get; set; }
@@ -75,8 +81,8 @@
         public string Shipcountry { get; set; }
     }
 
-    public List<OrdersData> Orders = new List<OrdersData> 
-    { 
+    public List<OrdersData> Orders = new List<OrdersData>
+    {
          new OrdersData {Date = new DateTime( 2020, 02, 04 ), Id = "01", Name = "VINET", Shipcountry = "France"},
          new OrdersData {Date = new DateTime( 2020, 02, 05 ), Id = "02", Name = "TOMSP", Shipcountry = "Germany"},
          new OrdersData {Date = new DateTime( 2020, 02, 08 ), Id = "03", Name = "HANAR", Shipcountry = "Brazil"},
@@ -88,5 +94,4 @@
          new OrdersData {Date = new DateTime( 2020, 02, 15 ), Id = "09", Name = "WELLI", Shipcountry = "Brazil"},
          new OrdersData {Date = new DateTime( 2020, 02, 16 ), Id = "10", Name = "HILAA", Shipcountry = "Venezuela"}
     };
-
 }
