@@ -62,9 +62,6 @@ Denote the data usage in Blazor sparkline charts by highlighting and customizing
 
 [Video Tutorials](https://www.syncfusion.com/tutorial-videos/blazor/sparkline?utm_source=github&utm_medium=listing&utm_campaign=blazor-sparkline-chart-github-samples)
 
-[Knowledge base](https://www.syncfusion.com/kb/blazor-components?utm_source=github&utm_medium=listing&utm_campaign=blazor-sparkline-chart-github-samples)
-
-
 ## About Syncfusion Blazor Components
 The Syncfusion's [Blazor components](https://www.syncfusion.com/blazor-components?utm_source=github&utm_medium=listing&utm_campaign=blazor-sparkline-chart-github-samples) library offers over 80 UI components to work with Blazor server-side and client-side (Blazor WebAssembly) projects seamlessly. In addition to Sparkline Chart, we provide popular Blazor Components such as [DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagrid?utm_source=github&utm_medium=listing&utm_campaign=blazor-sparkline-chart-github-samples), [Charts](https://www.syncfusion.com/blazor-components/blazor-charts?utm_source=github&utm_medium=listing&utm_campaign=blazor-sparkline-chart-github-samples), [Scheduler](https://www.syncfusion.com/blazor-components/blazor-scheduler?utm_source=github&utm_medium=listing&utm_campaign=blazor-sparkline-chart-github-samples), [Diagram](https://www.syncfusion.com/blazor-components/blazor-diagram?utm_source=github&utm_medium=listing&utm_campaign=blazor-sparkline-chart-github-samples), and [Word Processor](https://www.syncfusion.com/blazor-components/blazor-word-processor?utm_source=github&utm_medium=listing&utm_campaign=blazor-sparkline-chart-github-samples).
 
